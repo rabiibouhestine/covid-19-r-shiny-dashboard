@@ -233,7 +233,10 @@ server <- function(input, output) {
             hc_tooltip(useHTML=TRUE,
                        headerFormat='',
                        pointFormat = paste0('{point.Country}: {point.value} Confirmed Cases, as of ',max(latest_data$Date))) %>%
-            hc_title(text = 'Global Confirmed Cases of COVID-19')
+            hc_title(text = 'Global Confirmed Cases of COVID-19',
+                     style = list(
+                         color = "#c8c8c8"
+                     ))
     })
 
     output$line_chart <- renderHighchart({
@@ -253,7 +256,7 @@ server <- function(input, output) {
             hc_title(text = paste0(names(indicator_choices)[indicator_choices == input$select_indicator],
                                    ", ", input$select_country, ", ", input$select_dates[1], " to ", input$select_dates[2]),
                      style = list(
-                         color = "#ffffff"
+                         color = "#c8c8c8"
                      ))
     })
 
