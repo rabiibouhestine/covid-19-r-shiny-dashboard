@@ -135,7 +135,7 @@ ui <- tagList(
     ),
 
     tags$script(HTML("var header = $('.navbar > .container-fluid');
-                       header.append('<div style=\"float:right;margin-top:15px;margin-left:10px;\"><a target=\"_blank\" href=\"https://github.com/rabiibouhestine/Rawg-demo\"><i class=\"fa fa-code\"></i> Source</a></div>');
+                       header.append('<div style=\"float:right;margin-top:15px;margin-left:10px;\"><a target=\"_blank\" href=\"https://github.com/rabiibouhestine/covid-19-r-shiny-dashboard\"><i class=\"fa fa-code\"></i> Source</a></div>');
                        console.log(header)"))
 )
 
